@@ -10,10 +10,10 @@ export default class VideoPlayer extends Component {
       {this.props.videos.map((vid) => {
         //console.log(vid.snippet.resourceId.videoId);
         return (
-          //<iframe key={vid.id.videoId} width="560" height="315" src={`https://www.youtube.com/embed/${vid.resourceId.videoId}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          //<img src={ vid.snippet.thumbnails.maxres ? `http://img.youtube.com/vi/${vid.snippet.resourceId.videoId}/maxresdefault.jpg` : `http://img.youtube.com/vi/${vid.snippet.resourceId.videoId}/hqdefault.jpg` } alt={vid.snippet.title} />
           <div key={vid.snippet.resourceId.videoId}>
-          <img src={ vid.snippet.thumbnails.maxres ? `http://img.youtube.com/vi/${vid.snippet.resourceId.videoId}/maxresdefault.jpg` : `http://img.youtube.com/vi/${vid.snippet.resourceId.videoId}/hqdefault.jpg` } 
-          alt={vid.snippet.title} />
+          <iframe width="860" height="515" src={`https://www.youtube.com/embed/${vid.snippet.resourceId.videoId}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+          
             <p>{vid.snippet.title}</p>
           </div>
         )
