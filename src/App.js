@@ -37,7 +37,8 @@ class App extends Component {
       <div>
         <Header />
         <VideosList videos={this.state.videoList} />
-        <footer style={{"textAlign": "center", "marginTop": "20px"}}>
+        <footer style={{"textAlign": "center", "marginTop": "5px"}}>
+        <hr/>
           <p>Copyright 2018 -
             <a className="credits" href="https://ryhad.com">Ryhad, Inc</a>
           </p>

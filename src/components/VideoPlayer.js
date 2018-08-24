@@ -17,8 +17,8 @@ export default class VideoPlayer extends Component {
         
         return (
           <div key={this.props.videos[i].snippet.resourceId.videoId}>
-            <iframe width="860" height="515" src={`https://www.youtube.com/embed/${this.props.videos[i].snippet.resourceId.videoId}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
-            <p>{this.props.videos[i].snippet.title}</p>
+            <iframe width="98%" height="700" src={`https://www.youtube.com/embed/${this.props.videos[i].snippet.resourceId.videoId}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+            <p style={{'textAlign': 'center', 'fontSize': '1.3em'}}>- {this.props.videos[i].snippet.title} -</p>
           </div>
         )
       }
@@ -26,7 +26,7 @@ export default class VideoPlayer extends Component {
 
     return(
       <div>
-        <p>Select a title in the list.</p>
+        <h2 style={{'textAlign': 'center', 'marginTop': '10em'}}>Select a title in the list.</h2>
       </div>
   )
 

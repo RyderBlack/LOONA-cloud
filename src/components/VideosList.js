@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import VideoPlayer from './VideoPlayer';
 
 export default class VideosList extends Component {
@@ -6,7 +6,8 @@ export default class VideosList extends Component {
     constructor(props) {
         super(props);
         this.state= {
-            eventTarget : ''
+            eventTarget : '',
+            clicked: false
         }
         this.linkClicked = this.linkClicked.bind(this);
       }
@@ -17,7 +18,8 @@ export default class VideosList extends Component {
         let idAttribValue2 = idAttribValue.toString();
         
         this.setState({
-            eventTarget : idAttribValue2
+            eventTarget : idAttribValue2,
+            clicked: true
         })
         //console.log(this.state.eventTarget)
         //console.log(idAttribValue)
@@ -30,7 +32,14 @@ export default class VideosList extends Component {
         <div className="col-md-4">
             <ul>
             {this.props.videos.map((vid) => {
-                return ( <li key={vid.snippet.resourceId.videoId} id={vid.snippet.resourceId.videoId} onClick={(e) => this.linkClicked(e)}>{vid.snippet.title}</li> )
+                return ( 
+                    <Fragment>
+                        <li key={vid.snippet.resourceId.videoId} 
+                            id={vid.snippet.resourceId.videoId} 
+                            onClick={(e) => this.linkClicked(e)}
+                            className={this.state.eventTarget && vid.snippet.resourceId.videoId === this.state.eventTarget ? 'active' : ''}>{vid.snippet.title}</li> <hr/>
+                    </Fragment>
+                )
             })}
             </ul>
         </div>
