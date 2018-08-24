@@ -16,13 +16,14 @@ class App extends Component {
       videoList : []
     }
     //this.fetchYT = this.fetchYT.bind(this);
+    //this.linkClicked = this.linkClicked.bind(this);
   }
 
   componentWillMount() {
    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${KEYT}&playlistId=PLn2nfuATkZsQfG8no7wsG2t6GnYtAy8OB&part=snippet,id&order=date&maxResults=35`)
       .then((response) => response.json() )
       .then((responseJson) => {
-        console.log(responseJson.items);
+        //console.log(responseJson.items);
         this.setState({videoList: responseJson.items});
         
       })
@@ -35,7 +36,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <VideosList videos={this.state.videoList}/>
+        <VideosList videos={this.state.videoList} />
         <footer style={{"textAlign": "center", "marginTop": "20px"}}>
           <p>Copyright 2018 -
             <a className="credits" href="https://ryhad.com">Ryhad, Inc</a>
