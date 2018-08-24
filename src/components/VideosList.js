@@ -29,6 +29,7 @@ export default class VideosList extends Component {
     render() {
         return (
     <div className="row">
+    
         <div className="col-md-4">
             <ul>
             {this.props.videos.map((vid) => {
