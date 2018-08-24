@@ -17,8 +17,10 @@ export default class VideoPlayer extends Component {
         
         return (
           <div key={this.props.videos[i].snippet.resourceId.videoId}>
-            <iframe width="98%" height="700" src={`https://www.youtube.com/embed/${this.props.videos[i].snippet.resourceId.videoId}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
-            <p style={{'textAlign': 'center', 'fontSize': '1.3em'}}>- {this.props.videos[i].snippet.title} -</p>
+            <div className="yt-frame">
+              <iframe width="98%" height="700" src={`https://www.youtube.com/embed/${this.props.videos[i].snippet.resourceId.videoId}`} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+            </div>
+            <p className="title-video">- {this.props.videos[i].snippet.title} -</p>
           </div>
         )
       }

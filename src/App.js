@@ -39,8 +39,8 @@ class App extends Component {
         <VideosList videos={this.state.videoList} />
         <footer style={{"textAlign": "center", "marginTop": "5px"}}>
         <hr/>
-          <p>Copyright 2018 -
-            <a className="credits" href="https://ryhad.com">Ryhad, Inc</a>
+          <p>Copyrights 2018 ⓒ BlockBerryCreative. All Rights Reserved. -  
+            By <a className="credits" href="https://ryhad.com">Ryhad, Inc</a>
           </p>
         </footer>
       </div>
