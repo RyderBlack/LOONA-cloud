@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <VideoPlayer />
+        <VideoPlayer videos={this.state.videoList}/>
       </div>
     );
   }
