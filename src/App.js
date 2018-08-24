@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import VideoPlayer from './components/VideoPlayer.js';
+import VideosList from './components/VideosList.js';
 import './App.css';
 
 //console.log(process.env.REACT_APP_APKY);
@@ -30,8 +31,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <VideoPlayer videos={this.state.videoList}/>
+      <div >
+        <VideosList videos={this.state.videoList}/>
       </div>
     );
   }
