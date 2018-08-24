@@ -16,10 +16,10 @@ class App extends Component {
   }
 
   componentWillMount() {
-   fetch(`https://www.googleapis.com/youtube/v3/search?key=${KEYT}&channelId=UCOJplhB0wGQWv9OuRmMT-4g&part=snippet,id&order=date&maxResults=20`)
+   fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${KEYT}&playlistId=PLn2nfuATkZsQfG8no7wsG2t6GnYtAy8OB&part=snippet,id&order=date&maxResults=35`)
       .then((response) => response.json() )
       .then((responseJson) => {
-        //console.log(responseJson.items);
+        console.log(responseJson.items);
         this.setState({videoList: responseJson.items});
         
       })
