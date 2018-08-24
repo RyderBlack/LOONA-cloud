@@ -18,3 +18,31 @@ body {
   background: var(--bg-color);
   position: relative;
 }
+
+.header {
+  text-align: center;
+  padding: .5em;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--neutral-color);
+}
+
+ul {
+  margin-top: 2em;
+  padding: 0;
+  background: rgb(255, 45, 85);
+  background: linear-gradient(63deg, rgba(255, 45, 85, 1) 0%, rgba(88, 86, 214, 1) 35%, rgba(90, 200, 250, 1) 100%);
+  width: 40%;
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  color: #fff;
+  padding: .75em 0 .75em 0;
+}
+
+li:active {
+  -webkit-box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.75);
+}

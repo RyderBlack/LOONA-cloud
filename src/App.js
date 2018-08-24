@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import VideoPlayer from './components/VideoPlayer.js';
-import VideosList from './components/VideosList.js';
+//import VideoPlayer from './components/VideoPlayer.js';
+import VideosList from './components/VideosList';
+import Header from './components/Header';
+
 import './App.css';
 
 //console.log(process.env.REACT_APP_APKY);
@@ -31,8 +33,14 @@ class App extends Component {
 
   render() {
     return (
-      <div >
+      <div>
+        <Header />
         <VideosList videos={this.state.videoList}/>
+        <footer style={{"textAlign": "center", "marginTop": "20px"}}>
+          <p>Copyright 2018 -
+            <a className="credits" href="https://ryhad.com">Ryhad, Inc</a>
+          </p>
+        </footer>
       </div>
     );
   }
