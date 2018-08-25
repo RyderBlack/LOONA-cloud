@@ -8,7 +8,7 @@
   --bg-color: #f1f1f1;
   --neutral-color: #fff;
   --hovering-color: rgb(255, 45, 85);
-  --big-title-color: rgba(88, 86, 214, 1);
+  --big-title-color: rgb(98, 96, 250);
 }
 
 body {
@@ -28,14 +28,14 @@ body {
   background: var(--neutral-color);
   margin-bottom: .5em;
   border-bottom-color: var(--text-color-light);
-  box-shadow: 3px 8px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 3px 8px 20px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 3px 8px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.2);
   -webkit-animation: color-change 15s infinite;
-    -moz-animation: color-change 15s infinite;
-    -o-animation: color-change 15s infinite;
-    -ms-animation: color-change 15s infinite;
-    animation: color-change 15s infinite;
+  -moz-animation: color-change 15s infinite;
+  -o-animation: color-change 15s infinite;
+  -ms-animation: color-change 15s infinite;
+  animation: color-change 15s infinite;
 }
 
 .moonlogo {
@@ -44,15 +44,15 @@ body {
   margin-bottom: .2em;
 }
 
-
-
 ul {
-  padding: 10px;
+  padding: 15px;
   background-color: #fff;
   height: 700px;
   overflow: scroll;
-  border-radius: 15px;
-  box-shadow: 0 2px 3px 0 rgba(60, 64, 67, 0.3), 0 6px 10px 4px rgba(60, 64, 67, 0.15) !important
+  border-radius: 6px;
+  box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 li {
@@ -74,7 +74,6 @@ li:hover {
   color: var(--hovering-color) !important
 }
 
-.col-md-4,
 .col-md-8 {
   padding: 0 20px 0 20px !important;
 }
@@ -92,72 +91,196 @@ li:hover {
 }
 
 @-webkit-keyframes color-change {
-  0% { color: #E83681; }
-  8.3% { color: #F8DA59; }
-  16.6% { color: #00a73d; }
-  25% { color: orange; }
-  33.3% { color: pink; }
-  41.5% { color: red; }
-  50% { color: blue; }
-  58.1% { color: blueviolet; }
-  66.4% { color: rgb(103, 24, 24); }
-  74.7% { color: rgb(255, 170, 95); }
-  91% { color: rgb(3, 221, 170); }
-  100% { color: black; }
+  0% {
+    color: #E83681;
+  }
+  8.3% {
+    color: #F8DA59;
+  }
+  16.6% {
+    color: #00a73d;
+  }
+  25% {
+    color: orange;
+  }
+  33.3% {
+    color: pink;
+  }
+  41.5% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  58.1% {
+    color: blueviolet;
+  }
+  66.4% {
+    color: rgb(103, 24, 24);
+  }
+  74.7% {
+    color: rgb(255, 170, 95);
+  }
+  91% {
+    color: rgb(3, 221, 170);
+  }
+  100% {
+    color: black;
+  }
 }
+
 @-moz-keyframes color-change {
-  0% { color: #E83681; }
-  8.3% { color: #F8DA59; }
-  16.6% { color: #00a73d; }
-  25% { color: orange; }
-  33.3% { color: pink; }
-  41.5% { color: red; }
-  50% { color: blue; }
-  58.1% { color: blueviolet; }
-  66.4% { color: rgb(103, 24, 24); }
-  74.7% { color: rgb(255, 170, 95); }
-  91% { color: rgb(3, 221, 170); }
-  100% { color: black; }
+  0% {
+    color: #E83681;
+  }
+  8.3% {
+    color: #F8DA59;
+  }
+  16.6% {
+    color: #00a73d;
+  }
+  25% {
+    color: orange;
+  }
+  33.3% {
+    color: pink;
+  }
+  41.5% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  58.1% {
+    color: blueviolet;
+  }
+  66.4% {
+    color: rgb(103, 24, 24);
+  }
+  74.7% {
+    color: rgb(255, 170, 95);
+  }
+  91% {
+    color: rgb(3, 221, 170);
+  }
+  100% {
+    color: black;
+  }
 }
+
 @-ms-keyframes color-change {
-  0% { color: #E83681; }
-  8.3% { color: #F8DA59; }
-  16.6% { color: #00a73d; }
-  25% { color: orange; }
-  33.3% { color: pink; }
-  41.5% { color: red; }
-  50% { color: blue; }
-  58.1% { color: blueviolet; }
-  66.4% { color: rgb(103, 24, 24); }
-  74.7% { color: rgb(255, 170, 95); }
-  91% { color: rgb(3, 221, 170); }
-  100% { color: black; }
+  0% {
+    color: #E83681;
+  }
+  8.3% {
+    color: #F8DA59;
+  }
+  16.6% {
+    color: #00a73d;
+  }
+  25% {
+    color: orange;
+  }
+  33.3% {
+    color: pink;
+  }
+  41.5% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  58.1% {
+    color: blueviolet;
+  }
+  66.4% {
+    color: rgb(103, 24, 24);
+  }
+  74.7% {
+    color: rgb(255, 170, 95);
+  }
+  91% {
+    color: rgb(3, 221, 170);
+  }
+  100% {
+    color: black;
+  }
 }
+
 @-o-keyframes color-change {
-  0% { color: #E83681; }
-  8.3% { color: #F8DA59; }
-  16.6% { color: #00a73d; }
-  25% { color: orange; }
-  33.3% { color: pink; }
-  41.5% { color: red; }
-  50% { color: blue; }
-  58.1% { color: blueviolet; }
-  66.4% { color: rgb(103, 24, 24); }
-  74.7% { color: rgb(255, 170, 95); }
-  91% { color: rgb(3, 221, 170); }
-  100% { color: black; }
+  0% {
+    color: #E83681;
+  }
+  8.3% {
+    color: #F8DA59;
+  }
+  16.6% {
+    color: #00a73d;
+  }
+  25% {
+    color: orange;
+  }
+  33.3% {
+    color: pink;
+  }
+  41.5% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  58.1% {
+    color: blueviolet;
+  }
+  66.4% {
+    color: rgb(103, 24, 24);
+  }
+  74.7% {
+    color: rgb(255, 170, 95);
+  }
+  91% {
+    color: rgb(3, 221, 170);
+  }
+  100% {
+    color: black;
+  }
 }
+
 @keyframes color-change {
-  0% { color: #E83681; }
-  8.3% { color: #F8DA59; }
-  16.6% { color: #00a73d; }
-  25% { color: orange; }
-  33.3% { color: pink; }
-  41.5% { color: red; }
-  50% { color: blue; }
-  58.1% { color: blueviolet; }
-  66.4% { color: rgb(103, 24, 24); }
-  74.7% { color: rgb(255, 170, 95); }
-  91% { color: rgb(3, 221, 170); }
-  100% { color: black; }
+  0% {
+    color: #E83681;
+  }
+  8.3% {
+    color: #F8DA59;
+  }
+  16.6% {
+    color: #00a73d;
+  }
+  25% {
+    color: orange;
+  }
+  33.3% {
+    color: pink;
+  }
+  41.5% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  58.1% {
+    color: blueviolet;
+  }
+  66.4% {
+    color: rgb(103, 24, 24);
+  }
+  74.7% {
+    color: rgb(255, 170, 95);
+  }
+  91% {
+    color: rgb(3, 221, 170);
+  }
+  100% {
+    color: black;
+  }
 }
