@@ -36,6 +36,10 @@ body {
   -o-animation: color-change 15s infinite;
   -ms-animation: color-change 15s infinite;
   animation: color-change 15s infinite;
+  box-shadow: 0 2px 3px rgba(0,0,0,.3);
+  border: 0;
+  border-top: 5px solid #000;
+  border-image: linear-gradient(90deg,#12bdfd,#9f79f3) 6
 }
 
 .moonlogo {
